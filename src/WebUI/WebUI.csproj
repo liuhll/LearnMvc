@@ -117,9 +117,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +145,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -146,6 +163,28 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LearnMvc.Context\LearnMvc.Context.csproj">
+      <Project>{17209f6a-edd4-467c-9c97-a4e265b8bba9}</Project>
+      <Name>LearnMvc.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LearnMvc.Domain\LearnMvc.Domain.csproj">
+      <Project>{bec1ce08-aaa4-4423-8bd2-3e02ddaab7ff}</Project>
+      <Name>LearnMvc.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LearnMvc.IocManager\LearnMvc.IocManager.csproj">
+      <Project>{0a528e1a-a5d7-408f-a9d0-78d2a5857f61}</Project>
+      <Name>LearnMvc.IocManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LearnMvc.Repository\LearnMvc.Repository.csproj">
+      <Project>{d63e6098-6b01-42a2-b68b-cd354f2a9cea}</Project>
+      <Name>LearnMvc.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LearnMvc.Server\LearnMvc.Server.csproj">
+      <Project>{0dcb3116-d1ae-471d-9c60-649a315643b4}</Project>
+      <Name>LearnMvc.Server</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
