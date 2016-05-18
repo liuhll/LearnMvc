@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace LearnMvc.Domain
 {
-    public class Class1
+    public enum Sex
     {
+        Male,
+        Female
     }
+
 }
