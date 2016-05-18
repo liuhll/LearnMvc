@@ -18,4 +18,5 @@ Asp.net Mvc学习
 
 ## Code First
 
+> [Code First 学习](http://www.cnblogs.com/farb/p/IntroductionToEF.html)
 
