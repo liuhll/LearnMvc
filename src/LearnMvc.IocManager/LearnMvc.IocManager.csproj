@@ -47,9 +47,9 @@
       <Project>{d63e6098-6b01-42a2-b68b-cd354f2a9cea}</Project>
       <Name>LearnMvc.Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LearnMvc.Server\LearnMvc.Server.csproj">
+    <ProjectReference Include="..\LearnMvc.Server\LearnMvc.Application.csproj">
       <Project>{0dcb3116-d1ae-471d-9c60-649a315643b4}</Project>
-      <Name>LearnMvc.Server</Name>
+      <Name>LearnMvc.Application</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
