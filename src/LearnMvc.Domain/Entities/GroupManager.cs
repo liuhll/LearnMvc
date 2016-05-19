@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace LearnMvc.Domain.Entities
 {
-    class GroupManager
+    public class GroupManager
     {
+        public Guid Id { get; set; }
+
+        public string GroupName { get; set; }
+
+        public string GroupInfo { get; set; }
+
+        public Guid CreateUserId { get; set; }
+
+        public virtual ICollection<UserGroup> UserGroups { get; set; }
+
+        public virtual ICollection<ActionGroup> ActionGroups { get; set; }
+
+        public virtual User CreateUser { get; set; }
+
+
     }
 }

@@ -8,8 +8,13 @@ namespace LearnMvc.Domain.Entities
 {
     public class ActionColumn
     {
+
         public Guid ActionColumnId { get; set; }
 
+        public Guid ActionId { get; set; }
+
         public string ActionColumnName { get; set; }
+
+        public Action Action { get; set; }
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearnMvc.Context
+namespace LearnMvc.Domain.Enum
 {
-    public class Class1
+    public enum Sex
     {
+        Male,
+        Female,
     }
 }
