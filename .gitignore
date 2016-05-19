@@ -253,3 +253,6 @@ paket-files/
 
 #Content Components
 **/components
+
+#ignore packages
+**/packages
