@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace LearnMvc.Domain.Entities
 {
     public class Action
@@ -13,6 +14,8 @@ namespace LearnMvc.Domain.Entities
         public string ActionName { get; set; }
 
         public virtual IList<ActionColumn> ActionColumn { get; set; }
+
+        public virtual ICollection<ActionGroup> ActionGroups { get; set; }
 
     }
 }
