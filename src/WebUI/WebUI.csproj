@@ -1203,28 +1203,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LearnMvc.Context\LearnMvc.Context.csproj">
-      <Project>{17209f6a-edd4-467c-9c97-a4e265b8bba9}</Project>
-      <Name>LearnMvc.Context</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LearnMvc.Domain\LearnMvc.Domain.csproj">
-      <Project>{bec1ce08-aaa4-4423-8bd2-3e02ddaab7ff}</Project>
-      <Name>LearnMvc.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LearnMvc.IocManager\LearnMvc.IocManager.csproj">
-      <Project>{0a528e1a-a5d7-408f-a9d0-78d2a5857f61}</Project>
-      <Name>LearnMvc.IocManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LearnMvc.Repository\LearnMvc.Repository.csproj">
-      <Project>{d63e6098-6b01-42a2-b68b-cd354f2a9cea}</Project>
-      <Name>LearnMvc.Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LearnMvc.Server\LearnMvc.Application.csproj">
-      <Project>{0dcb3116-d1ae-471d-9c60-649a315643b4}</Project>
-      <Name>LearnMvc.Application</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
