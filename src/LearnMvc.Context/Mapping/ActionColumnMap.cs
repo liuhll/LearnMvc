@@ -9,7 +9,7 @@ using LearnMvc.Domain.Entities;
 
 namespace LearnMvc.Context.Mapping
 {
-    public class ActionColumnMap: EntityTypeConfiguration<ActionColumn>
+    public class ActionColumnMap : EntityTypeConfiguration<ActionColumn>
     {
         public ActionColumnMap()
         {

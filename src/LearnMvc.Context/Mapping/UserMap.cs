@@ -9,7 +9,7 @@ using LearnMvc.Domain.Entities;
 
 namespace LearnMvc.Context.Mapping
 {
-    public class UserMap:EntityTypeConfiguration<User>
+    public class UserMap : EntityTypeConfiguration<User>
     {
         public UserMap()
         {

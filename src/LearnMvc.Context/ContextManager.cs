@@ -4,8 +4,8 @@ using System.Web;
 
 namespace LearnMvc.Context
 {
-    public class ContextManager<TContext>:IContextManager<TContext>
-        where TContext:IDbContext,new ()
+    public class ContextManager<TContext> : IContextManager<TContext>
+        where TContext : IDbContext, new()
     {
         private static string _contextKey = "ContextManager.Context";
 
@@ -16,16 +16,16 @@ namespace LearnMvc.Context
 
         public IDbContext GetContext()
         {
-            if (HttpContext.Current.Items[_contextKey]==null)
+            if (HttpContext.Current.Items[_contextKey] == null)
             {
-                HttpContext.Current.Items[_contextKey]=new TContext();
+                HttpContext.Current.Items[_contextKey] = new TContext();
             }
             return HttpContext.Current.Items[_contextKey] as IDbContext;
         }
 
         public void Finish()
         {
-            if (HttpContext.Current.Items[_contextKey]!=null)
+            if (HttpContext.Current.Items[_contextKey] != null)
             {
                 (HttpContext.Current.Items[_contextKey] as IDbContext).Dispose();
             }

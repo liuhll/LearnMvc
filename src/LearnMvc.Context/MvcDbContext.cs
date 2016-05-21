@@ -10,7 +10,7 @@ using LearnMvc.Context.Mapping;
 
 namespace LearnMvc.Context
 {
-    public class MvcDbContext:BaseDbContext
+    public class MvcDbContext : BaseDbContext
     {
         public MvcDbContext()
             : base("LearnMvcEntities")
@@ -21,7 +21,6 @@ namespace LearnMvc.Context
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             base.OnModelCreating(modelBuilder);
-
             modelBuilder.Configurations.Add(new ActionMap());
             modelBuilder.Configurations.Add(new ActionColumnMap());
             modelBuilder.Configurations.Add(new ActionGroupMap());
