@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace LearnMvc.Context.Interfaces
 {
-   public interface IDbContext
+    public interface IDbContext
     {
-        DbSet Set<TEntity>() where TEntity:class ;
+        DbSet Set<TEntity>() where TEntity : class;
 
         DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : class;
 

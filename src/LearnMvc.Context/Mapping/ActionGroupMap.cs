@@ -9,7 +9,7 @@ using LearnMvc.Domain.Entities;
 
 namespace LearnMvc.Context.Mapping
 {
-    public class ActionGroupMap: EntityTypeConfiguration<ActionGroup>
+    public class ActionGroupMap : EntityTypeConfiguration<ActionGroup>
     {
         public ActionGroupMap()
         {
@@ -28,7 +28,7 @@ namespace LearnMvc.Context.Mapping
 
             Property(t => t.CreateDateTime)
                 .IsRequired();
-            
+
             //定义表外键
             HasRequired(t => t.Action)
                 .WithMany(t => t.ActionGroups)

@@ -6,7 +6,7 @@ using LearnMvc.Domain.Entities;
 
 namespace LearnMvc.Context.Mapping
 {
-    public class GroupManagerMap: EntityTypeConfiguration<GroupManager>
+    public class GroupManagerMap : EntityTypeConfiguration<GroupManager>
     {
         public GroupManagerMap()
         {
