@@ -4,6 +4,7 @@ Asp.net Mvc学习
 ##领域驱动设计
 - [领域驱动设计之领域模型](http://www.cnblogs.com/netfocus/archive/2011/10/10/2204949.html)
 - [领域模型驱动设计（Domain Driven Design）入门概述](http://blog.csdn.net/johnstrive/article/details/16805121)
+- [领域驱动设计(DDD)的学习成果](http://kb.cnblogs.com/page/117717/#s3)
 
 
 ##基本权限管理
